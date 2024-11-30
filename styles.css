@@ -9,6 +9,7 @@
     --interFont: "Inter", sans-serif;
     --themeColor: #1DD100;
     --textColor: #030712cd;
+    --textColorLight: #03071278;
 }
 
 
@@ -39,6 +40,7 @@ header {
 
 #nav_mid div {
     padding: 0px 30px;
+    color: var(--textColorLight);
 }
 
 #nav_btn {
@@ -63,7 +65,97 @@ header {
 }
 
 
-.main_container {
-    background-color: lightcoral;
-    height: 200px;
+/*Header Body*/
+
+/*header banner*/
+
+#header_banner_container {
+    margin-top: 30px;
+    /* border: 1px solid red; */
+    height: 600px;
+    position: relative;
+}
+
+#header_banner {
+    background-image: url(images/banner.png);
+    background-repeat: no-repeat;
+    height: 540px;
+    background-size: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* border: 1px solid red; */
+    width: 100%;
+    /* display: none; */
+}
+
+#header_banner h1 {
+    font-size: 70px;
+    margin-bottom: 10px;
+    font-family: var(--ralewayFont);
+}
+
+#header_banner h1:nth-child(1) {
+    color: white;
+}
+
+#header_banner h1:nth-child(2) {
+    color: var(--themeColor)
+}
+
+#header_banner p {
+    color: white;
+    font-family: var(--interFont);
+    width: 70%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#banner_btn {
+    border-style: none;
+    background-color: var(--themeColor);
+    padding: 20px 30px;
+    font-family: var(--ralewayFont);
+    font-size: 19px;
+    font-weight: 700;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+/*popularity info*/
+
+#popularity_info {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    /* border: 1px solid red; */
+    bottom: 0px;
+}
+
+
+
+.popularity_cart {
+    display: flex;
+    border-bottom: 3px solid var(--themeColor);
+    width: 23%;
+    padding: 25px 10px;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: var(--interFont);
+    margin: 0 30px;
+    border-radius: 20px;
+    background-color: whitesmoke;
+}
+
+.cart_info h1 {
+    font-weight: 700;
+    font-size: 32px;
+    margin-bottom: 2px;
+}
+
+.cart_info p {
+    color: var(--textColorLight);
+    margin-top: 7px;
 }
