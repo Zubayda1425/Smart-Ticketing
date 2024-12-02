@@ -76,7 +76,7 @@ header {
     margin-top: 30px;
     height: 600px;
     position: relative;
-    display: none;
+    /* display: none; */
 }
 
 #header_banner {
@@ -167,8 +167,9 @@ header {
 
 
 #offers_container {
-    margin-top: 150px;
-    display: none;
+    margin: 150px 0px 100px 0px;
+
+    /* display: none; */
 }
 
 #offers {
@@ -276,7 +277,7 @@ header {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    display: none;
+    /* display: none; */
 }
 
 #paribahan_information_container>h1 {
@@ -416,6 +417,7 @@ header {
     display: flex;
     border-radius: 30px;
     padding: 30px 0px;
+    margin-top: 100px;
 }
 
 #seat_selection {
@@ -440,7 +442,6 @@ header {
 
 #seat_selct_heading_container>div {
     border-bottom: 2px dashed rgba(128, 128, 128, 0.308);
-
     padding-bottom: 30px;
 }
 
