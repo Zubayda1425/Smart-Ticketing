@@ -12,6 +12,7 @@
     --textColorLight: #03071278;
     --btnBackgroundColor: #1DD1001A;
     --main_backgroundColor: #F7F8F8;
+    --googlePlayStore: "Josefin Sans", sans-serif;
 }
 
 
@@ -76,7 +77,7 @@ header {
     margin-top: 30px;
     height: 600px;
     position: relative;
-    /* display: none; */
+    display: none;
 }
 
 #header_banner {
@@ -169,7 +170,7 @@ header {
 #offers_container {
     margin: 150px 0px 100px 0px;
 
-    /* display: none; */
+    display: none;
 }
 
 #offers {
@@ -277,7 +278,7 @@ header {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    /* display: none; */
+    display: none;
 }
 
 #paribahan_information_container>h1 {
@@ -418,6 +419,7 @@ header {
     border-radius: 30px;
     padding: 30px 0px;
     margin-top: 100px;
+    display: none;
 }
 
 #seat_selection {
@@ -645,6 +647,7 @@ header {
     font-family: var(--interFont);
     /* border: 1px solid red; */
 }
+
 #passenger_form_container input {
     font-family: var(--interFont);
     padding: 17px 0px;
@@ -654,7 +657,7 @@ header {
     border: 1px solid rgba(128, 128, 128, 0.263);
 }
 
-#passenger_form_container input::placeholder{
+#passenger_form_container input::placeholder {
     padding: 20px;
 }
 
@@ -666,7 +669,7 @@ header {
     font-weight: 600;
 }
 
-#terms_conditions{
+#terms_conditions {
     margin-top: 13px;
     display: flex;
     justify-content: space-between;
@@ -676,6 +679,90 @@ header {
     padding: 0px 30px;
 }
 
-#terms_conditions p{
+#terms_conditions p {
     border-bottom: 1px solid var(--textColorLight);
+}
+
+
+/* footer */
+
+footer {
+    background-color: #030712;
+    color: whitesmoke;
+    font-family: var(--interFont);
+    padding: 110px 100px 110px 100px;
+
+}
+
+.footer_diff_font {
+    font-family: var(--ralewayFont);
+    margin-bottom: 15px;
+}
+
+.upper {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px dashed rgba(128, 128, 128, 0.416);
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+}
+
+.upper_left p{
+    font-weight: 300;
+    color: rgba(245, 245, 245, 0.72);
+    width: 330px;
+}
+
+.upper_right h3 {
+    font-weight: 500;
+    text-align: end;
+}
+
+
+#play_store_container button {
+    display: flex;
+    padding: 10px;
+    background-color: #030712;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+#play_store_container img{
+    margin-right: 10px;
+}
+
+#play_store {
+    text-align: left;
+    color: white;
+}
+
+#play_store h4{
+    font-weight: 500;
+    font-size: 12px;
+}
+#play_store h1{
+    font-weight: 400;
+    font-size: 25px;
+    font-family: var(--googlePlayStore);
+}
+
+.copyRight_termsCon{
+    display: flex;
+    justify-content: space-between;
+}
+
+.copyRight {
+    font-size: 14px;
+    font-weight: 300;
+    color: rgba(245, 245, 245, 0.72);
+}
+
+#policies{
+    font-size: 15px;
+    font-weight: 400;
+    display: flex;
+}
+
+#policies div{
+    margin-left: 30px;
 }
