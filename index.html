@@ -54,7 +54,7 @@
                 <p>Yes, you can run unit tests and view the results directly within the app. The integrated testing
                     features
                     allow for a streamlined .</p>
-                <button id="banner_btn">Buy Tickets</button>
+                <a href="#main"><button id="banner_btn">Buy Tickets</button></a>
             </div>
             <div id="popularity_info">
 
@@ -134,7 +134,7 @@
 
 
 
-    <main class="main_container">
+    <main class="main_container" id="main">
         <section id="paribahan_information_container">
             <h1>P.H Paribahan</h1>
             <p>Yes, you can run unit tests and view the results directly within the app. The integrated testing features
@@ -155,7 +155,7 @@
 
                             <button>
                                 <img src="images/seat-green.png" alt="">
-                                <p>40 Seats left</p>
+                                <p><span id="lefted_seat">40</span> Seats left</p>
                             </button>
                         </div>
                         <div id="paribahan_schedule">
@@ -187,7 +187,6 @@
         </section>
         <section id="seat_selection_container">
             <div id="seat_selection">
-
                 <div id="seat_selct_heading_container">
                     <div>
                         <h1>Select Your Seat</h1>
@@ -199,7 +198,7 @@
                         </div>
                         <div class="seat_selct_heading">
                             <img src="images/seat-green-filled.png" alt="">
-                            <p id="seat_green">Available</p>
+                            <p id="seat_green">Selected</p>
                         </div>
                     </div>
 
@@ -226,58 +225,58 @@
                             <div id="left_seat">
                                 <div class="seat_container">
                                     <p class="hidden">Z</p>
-                                    <p>A1</p>
-                                    <p>B1</p>
-                                    <p>C1</p>
-                                    <p>D1</p>
-                                    <p>E1</p>
-                                    <p>F1</p>
-                                    <p>G1</p>
-                                    <p>H1</p>
-                                    <p>I1</p>
-                                    <p>J1</p>
+                                    <p onclick="choosedSeat('A1')" id="A1">A1</p>
+                                    <p onclick="choosedSeat('B1')" id="B1">B1</p>
+                                    <p onclick="choosedSeat('C1')" id="C1">C1</p>
+                                    <p onclick="choosedSeat('D1')" id="D1">D1</p>
+                                    <p onclick="choosedSeat('E1')" id="E1">E1</p>
+                                    <p onclick="choosedSeat('F1')" id="F1">F1</p>
+                                    <p onclick="choosedSeat('G1')" id="G1">G1</p>
+                                    <p onclick="choosedSeat('H1')" id="H1">H1</p>
+                                    <p onclick="choosedSeat('I1')" id="I1">I1</p>
+                                    <p onclick="choosedSeat('J1')" id="J1">J1</p>
                                 </div>
                                 <div class="seat_container">
                                     <p class="hidden">Z</p>
-                                    <p>A2</p>
-                                    <p>B2</p>
-                                    <p>C2</p>
-                                    <p>D2</p>
-                                    <p>E2</p>
-                                    <p>F2</p>
-                                    <p>G2</p>
-                                    <p>H2</p>
-                                    <p>I2</p>
-                                    <p>J2</p>
+                                    <p onclick="choosedSeat('A2')" id="A2">A2</p>
+                                    <p onclick="choosedSeat('B2')" id="B2">B2</p>
+                                    <p onclick="choosedSeat('C2')" id="C2">C2</p>
+                                    <p onclick="choosedSeat('D2')" id="D2">D2</p>
+                                    <p onclick="choosedSeat('E2')" id="E2">E2</p>
+                                    <p onclick="choosedSeat('F2')" id="F2">F2</p>
+                                    <p onclick="choosedSeat('G2')" id="G2">G2</p>
+                                    <p onclick="choosedSeat('H2')" id="H2">H2</p>
+                                    <p onclick="choosedSeat('I2')" id="I2">I2</p>
+                                    <p onclick="choosedSeat('J2')" id="J2">J2</p>
                                 </div>
                             </div>
                         </div>
                         <div id="right_seat">
                             <div class="seat_container">
                                 <p class="hidden">Z</p>
-                                <p>A3</p>
-                                <p>B3</p>
-                                <p>C3</p>
-                                <p>D3</p>
-                                <p>E3</p>
-                                <p>F3</p>
-                                <p>G3</p>
-                                <p>H3</p>
-                                <p>I3</p>
-                                <p>J3</p>
+                                <p onclick="choosedSeat('A3')" id="A3">A3</p>
+                                <p onclick="choosedSeat('B3')" id="B3">B3</p>
+                                <p onclick="choosedSeat('C3')" id="C3">C3</p>
+                                <p onclick="choosedSeat('D3')" id="D3">D3</p>
+                                <p onclick="choosedSeat('E3')" id="E3">E3</p>
+                                <p onclick="choosedSeat('F3')" id="F3">F3</p>
+                                <p onclick="choosedSeat('G3')" id="G3">G3</p>
+                                <p onclick="choosedSeat('H3')" id="H3">H3</p>
+                                <p onclick="choosedSeat('I3')" id="I3">I3</p>
+                                <p onclick="choosedSeat('J3')" id="J3">J3</p>
                             </div>
                             <div class="seat_container">
                                 <div><img src="images/tabler-icon-steering-wheel.png"></div>
-                                <p>A4</p>
-                                <p>B4</p>
-                                <p>C4</p>
-                                <p>D4</p>
-                                <p>E4</p>
-                                <p>F4</p>
-                                <p>G4</p>
-                                <p>H4</p>
-                                <p>I4</p>
-                                <p>J4</p>
+                                <p onclick="choosedSeat('A4')" id="A4">A4</p>
+                                <p onclick="choosedSeat('B4')" id="B4">B4</p>
+                                <p onclick="choosedSeat('C4')" id="C4">C4</p>
+                                <p onclick="choosedSeat('D4')" id="D4">D4</p>
+                                <p onclick="choosedSeat('E4')" id="E4">E4</p>
+                                <p onclick="choosedSeat('F4')" id="F4">F4</p>
+                                <p onclick="choosedSeat('G4')" id="G4">G4</p>
+                                <p onclick="choosedSeat('H4')" id="H4">H4</p>
+                                <p onclick="choosedSeat('I4')" id="I4">I4</p>
+                                <p onclick="choosedSeat('J4')" id="J4">J4</p>
                             </div>
                         </div>
                     </div>
@@ -293,64 +292,59 @@
                     <div id="money_recipt_header">
                         <div class="money_recipt_header">
                             <div id="seat_count">
-                                <p>Seat</p> <span>2</span>
+                                <p>Seat</p> <span id="counting">0</span>
                             </div>
                         </div>
                         <div class="money_recipt_header">
                             <p>Class</p>
                         </div>
-                        <div class="money_recipt_header" id="price">
+                        <div class="money_recipt_header">
                             <p>Price</p>
                         </div>
                     </div>
                     <div id="money_recipt">
-                        <div>
+                        <div id="seat_serial">
 
-                            <div>
-                                <p>C2</p>
-                            </div>
-                            <div>
-                                <p>C2</p>
-                            </div>
+
+
                         </div>
-                        <div>
+                        <div id="economy">
 
-                            <div>
-                                <p>Economy</p>
-                            </div>
-                            <div>
-                                <p>Economy</p>
-                            </div>
+
+
                         </div>
-                        <div>
+                        <div id="price">
 
-                            <div>
-                                <p>500</p>
-                            </div>
-                            <div>
-                                <p>500</p>
-                            </div>
+
+
                         </div>
                     </div>
 
 
                     <div class="total_bill">
                         <div>Total Price</div>
-                        <div>BDT <span>1100</span></div>
+                        <div>BDT <span id="total_price">0</span></div>
                     </div>
+
+                    <div class="total_bill" id="discount">
+                        <div>Discount</div>
+                        <div>BDT <span id="discount_price">0</span></div>
+                    </div>
+
+                    <hr id="hr">
 
                     <div id="coupon_container">
                         <div>
-                            <input type="text" name="" id="coupon_code" placeholder="Have any coupon?">
+                            <input type="text" id="coupon_code" placeholder="Have any coupon?">
                         </div>
                         <div>
-                            <button>Apply</button>
+                            <button onclick="getCouponCode()" id="coupon_btn">Apply</button>
                         </div>
                     </div>
 
                     <div class="total_bill">
                         <div>Grand Total</div>
-                        <div>BDT <span>1100</span></div>
+                        <div>BDT <span id="grand_total">0</span></div>
                     </div>
 
 
@@ -361,15 +355,15 @@
                 <div id="passenger_form_container">
                     <form>
                         <label>Passenger Name*</label><br>
-                        <input type="text" placeholder="Enter your name"><br>
+                        <input type="text" placeholder="Enter your name" id="name_field"><br>
 
                         <label>Phone Number*</label><br>
-                        <input type="text" placeholder="Enter your phone number"><br>
+                        <input type="tel" placeholder="Enter your phone number" id="contactNo_field"><br>
 
                         <label>Email ID</label><br>
-                        <input type="text" placeholder="Enter your email id"><br>
+                        <input type="text" placeholder="Enter your email id" ><br>
 
-                        <input type="button" value="Next" id="passenger_form_button">
+                        <input type="button" value="Next" id="passenger_form_button" onclick="submit_form()">
 
                         <div id="terms_conditions">
                             <p>Terms and Conditions</p>
@@ -429,7 +423,8 @@
 
     </footer>
 
-
+    <script src="Scripts/script_ticketing.js"></script>
+    <script></script>
 </body>
 
 </html>

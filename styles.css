@@ -3,6 +3,9 @@
     margin: 0px;
 }
 
+html {
+    scroll-behavior: smooth;
+}
 
 :root {
     --ralewayFont: "Raleway", sans-serif;
@@ -123,6 +126,11 @@ header {
     font-weight: 700;
     border-radius: 10px;
     margin-top: 10px;
+}
+
+#banner_btn a {
+    text-decoration: none;
+    color: var(--textColor);
 }
 
 /*popularity info*/
@@ -447,6 +455,11 @@ header {
     padding-bottom: 30px;
 }
 
+#seat_green {
+    color: var(--themeColor);
+    font-weight: 500;
+}
+
 #seat_available {
     display: flex;
     justify-content: space-between;
@@ -502,7 +515,7 @@ header {
 }
 
 #right_seat img {
-    padding: 8px 40px;
+    padding: 8px 33px;
     background-color: rgba(128, 128, 128, 0.322);
     border-radius: 10px;
     margin-bottom: 10px;
@@ -603,6 +616,10 @@ header {
     margin: 15px 0px;
 }
 
+/* .discount {
+    display: none;
+} */
+
 #coupon_container {
     background-color: white;
     display: flex;
@@ -616,7 +633,9 @@ header {
     background-color: white;
     border: none;
     padding: 13px;
+    outline: none;
 }
+
 
 #coupon_container::placeholder {
     color: var(--textColorLight);
@@ -633,6 +652,10 @@ header {
     font-weight: 600;
 }
 
+/* #coupon_btn {
+    opacity: 0.6;
+    cursor: not-allowed;
+} */
 
 /*Passenger Information Form*/
 
@@ -650,11 +673,16 @@ header {
 
 #passenger_form_container input {
     font-family: var(--interFont);
-    padding: 17px 0px;
+    padding: 17px 20px;
     margin: 15px 0px;
     width: 100%;
     border-radius: 10px;
     border: 1px solid rgba(128, 128, 128, 0.263);
+    outline: none;
+}
+
+#passenger_form_container input:focus {
+    border: 2px solid rgba(128, 128, 128, 0.655);
 }
 
 #passenger_form_container input::placeholder {
@@ -707,7 +735,7 @@ footer {
     margin-bottom: 30px;
 }
 
-.upper_left p{
+.upper_left p {
     font-weight: 300;
     color: rgba(245, 245, 245, 0.72);
     width: 330px;
@@ -727,7 +755,7 @@ footer {
     border-radius: 10px;
 }
 
-#play_store_container img{
+#play_store_container img {
     margin-right: 10px;
 }
 
@@ -736,17 +764,18 @@ footer {
     color: white;
 }
 
-#play_store h4{
+#play_store h4 {
     font-weight: 500;
     font-size: 12px;
 }
-#play_store h1{
+
+#play_store h1 {
     font-weight: 400;
     font-size: 25px;
     font-family: var(--googlePlayStore);
 }
 
-.copyRight_termsCon{
+.copyRight_termsCon {
     display: flex;
     justify-content: space-between;
 }
@@ -757,12 +786,12 @@ footer {
     color: rgba(245, 245, 245, 0.72);
 }
 
-#policies{
+#policies {
     font-size: 15px;
     font-weight: 400;
     display: flex;
 }
 
-#policies div{
+#policies div {
     margin-left: 30px;
 }
