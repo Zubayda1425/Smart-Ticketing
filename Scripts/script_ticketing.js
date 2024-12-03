@@ -20,6 +20,8 @@ document.getElementById('coupon_btn').style.opacity = "0.6";
 document.getElementById('coupon_btn').style.cursor = "not-allowed";
 document.getElementById('passenger_form_button').style.opacity = "0.6";
 document.getElementById('passenger_form_button').style.cursor = "not-allowed";
+document.getElementById('modal').style.display = "none";
+
 
 
 
@@ -73,7 +75,7 @@ function choosedSeat(seatName) {
 
 
         //form 
-        if (selectedSeatCount>-1){
+        if (selectedSeatCount > -1) {
 
             formFunctionalities();
         }
@@ -174,7 +176,7 @@ function getCouponCode() {
 
 
 
-function formFunctionalities(){
+function formFunctionalities() {
     document.getElementById('name_field').addEventListener('keyup', function (event) {
         const text = event.target.value;
         const submitBtn = document.getElementById('btn-passenger_form_button');
@@ -203,7 +205,17 @@ function formFunctionalities(){
 
 
 
+function submit_form() {
+    const modal = document.getElementById('modal');
+    modal.style.display = "flex";
+    document.getElementById('header').style.display = "none";
+    document.getElementById('main').style.display = "none";
+    document.getElementById('footer').style.display = "none";
+}
 
+function modal_btn(){
+    location.reload();
+}
 
 
 

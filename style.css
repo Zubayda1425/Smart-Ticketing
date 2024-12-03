@@ -10,6 +10,7 @@ html {
 :root {
     --ralewayFont: "Raleway", sans-serif;
     --interFont: "Inter", sans-serif;
+    --robotoFont: "Roboto", sans-serif;
     --themeColor: #1DD100;
     --textColor: #030712cd;
     --textColorLight: #03071278;
@@ -794,4 +795,58 @@ footer {
 
 #policies div {
     margin-left: 30px;
+}
+
+
+/* modal */
+
+.modal_container {
+    /* width: 100vw; */
+    height: 99vh;
+    background-color: var(--main_backgroundColor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--robotoFont);
+}
+
+.modal {
+    background-color: white;
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.modal img {
+    margin: 20px;
+}
+
+.modal h1 {
+    margin: 20px;
+    color: #27AE60;
+}
+
+.modal h3 {
+    margin-top: 5px;
+    color: rgb(80, 80, 80);
+    font-weight: 500;
+}
+
+.modal p {
+    font-weight: 300;
+    font-size: 18px;
+    margin: 20px
+}
+
+.modal button {
+    padding: 15px 100px;
+    background-color: #27AE60;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 50px;
+    border: none;
 }
