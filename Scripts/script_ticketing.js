@@ -1,18 +1,3 @@
-
-
-// add seat price (total Price )
-//coupon code (4ta ticket katlei coupon code dite pare )
-//coupon code disable - enable 
-// coupon 1bar nea hoye gele oi bar ta display : none hye jabe 
-// koto taka discount pailo seta dekhabe 
-// coupon vul hole alert 
-
-
-// form submission button disable (name + phone)----> enable 
-//
-
-
-
 const clickedSeatArr = [];
 document.getElementById('discount').style.display = "none";
 document.getElementById('hr').style.display = "none";
@@ -21,8 +6,6 @@ document.getElementById('coupon_btn').style.cursor = "not-allowed";
 document.getElementById('passenger_form_button').style.opacity = "0.6";
 document.getElementById('passenger_form_button').style.cursor = "not-allowed";
 document.getElementById('modal').style.display = "none";
-
-
 
 
 function choosedSeat(seatName) {
@@ -91,7 +74,6 @@ function choosedSeat(seatName) {
     }
 }
 
-
 // koto gulo seat count hoise _____________&&&_____________lefted seat count korbe 
 function getSeatCountIncrease_Decrease(inDeID) {
     const seatCountString = document.getElementById(inDeID);
@@ -151,33 +133,20 @@ function setDiscountedvalue(code){
 }
 
 function getCouponCode() {
-    // const typedCode = document.getElementById('coupon_code').value;
-    // const totalPriceText = document.getElementById('total_price');
-    // const grandTotalText = document.getElementById('grand_total');
-    // const totalPrice = parseInt(totalPriceText.innerText);
-    // let grandTotal = totalPrice;
     const typedCode = document.getElementById('coupon_code').value;
     if (typedCode === 'NEW15') {
-        // grandTotal = totalPrice - (totalPrice * .15);
-        // document.getElementById('discount_price').innerText = totalPrice * .15;
+        
         setDiscountedvalue(.15);
     }
     else if (typedCode === 'NEW20') {
-        // grandTotal = totalPrice - (totalPrice * .20);
-        // document.getElementById('discount_price').innerText = totalPrice * .20;
+        
         setDiscountedvalue(.20);
     }
     else {
         document.getElementById('coupon_code').value = "";
-        alert('Please Type Correct Code');
-        // getCouponCode();
+        alert('Please Type Correct Code');  
     }
-    // grandTotalText.innerText = grandTotal;
-
-
-    // document.getElementById('discount').style.display = "flex";
-    // document.getElementById('coupon_container').style.display = "none";
-    // document.getElementById('hr').style.display = "block";
+  
 }
 
 function formFunctionalities() {

@@ -541,15 +541,6 @@ header {
 }
 
 
-
-
-
-/* another_way
- */
-
-
-
-
 #passenger_info {
     border-left: 2px dashed grey;
     width: 40%;
@@ -617,9 +608,6 @@ header {
     margin: 15px 0px;
 }
 
-/* .discount {
-    display: none;
-} */
 
 #coupon_container {
     background-color: white;
@@ -652,11 +640,6 @@ header {
     border-radius: 9px;
     font-weight: 600;
 }
-
-/* #coupon_btn {
-    opacity: 0.6;
-    cursor: not-allowed;
-} */
 
 /*Passenger Information Form*/
 
@@ -801,7 +784,6 @@ footer {
 /* modal */
 
 .modal_container {
-    /* width: 100vw; */
     height: 99vh;
     background-color: var(--main_backgroundColor);
     display: flex;
