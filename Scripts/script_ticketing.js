@@ -130,51 +130,55 @@ function totalPrice(priceTypeId) {
 }
 
 //coupon_code
-function getCouponCode() {
-    const typedCode = document.getElementById('coupon_code').value;
+
+function setDiscountedvalue(code){
+    
     const totalPriceText = document.getElementById('total_price');
     const grandTotalText = document.getElementById('grand_total');
     const totalPrice = parseInt(totalPriceText.innerText);
     let grandTotal = totalPrice;
-    if (typedCode === 'NEW15') {
-        grandTotal = totalPrice - (totalPrice * .15);
-        document.getElementById('discount_price').innerText = totalPrice * .15;
-    }
-    else if (typedCode === 'NEW20') {
-        grandTotal = totalPrice - (totalPrice * .20);
-        document.getElementById('discount_price').innerText = totalPrice * .20;
-    }
-    else {
-        alert('Please Type Correct Code');
-    }
+
+    grandTotal = totalPrice - (totalPrice * code);
+    document.getElementById('discount_price').innerText = totalPrice * code;
+
     grandTotalText.innerText = grandTotal;
 
 
     document.getElementById('discount').style.display = "flex";
     document.getElementById('coupon_container').style.display = "none";
     document.getElementById('hr').style.display = "block";
-
+    
 }
 
+function getCouponCode() {
+    // const typedCode = document.getElementById('coupon_code').value;
+    // const totalPriceText = document.getElementById('total_price');
+    // const grandTotalText = document.getElementById('grand_total');
+    // const totalPrice = parseInt(totalPriceText.innerText);
+    // let grandTotal = totalPrice;
+    const typedCode = document.getElementById('coupon_code').value;
+    if (typedCode === 'NEW15') {
+        // grandTotal = totalPrice - (totalPrice * .15);
+        // document.getElementById('discount_price').innerText = totalPrice * .15;
+        setDiscountedvalue(.15);
+    }
+    else if (typedCode === 'NEW20') {
+        // grandTotal = totalPrice - (totalPrice * .20);
+        // document.getElementById('discount_price').innerText = totalPrice * .20;
+        setDiscountedvalue(.20);
+    }
+    else {
+        document.getElementById('coupon_code').value = "";
+        alert('Please Type Correct Code');
+        // getCouponCode();
+    }
+    // grandTotalText.innerText = grandTotal;
 
-//form Submission 
-// function submit_form() {
-//     const name = document.getElementById('name_field').value;
-//     const contactNo_text = document.getElementById('contactNo_field').value;
-//     const contactNo = parseInt(contactNo_text)
-//     // console.log(typeof null, typeof contactNo);
-//     if ((typeof name === 'String')&&(typeof name === 'Number')){
-//         document.getElementById('passenger_form_button').style.opacity = "1";
-//         document.getElementById('passenger_form_button').style.cursor = "default";
-//     }
 
-
-
-
-
-// }
-
-
+    // document.getElementById('discount').style.display = "flex";
+    // document.getElementById('coupon_container').style.display = "none";
+    // document.getElementById('hr').style.display = "block";
+}
 
 function formFunctionalities() {
     document.getElementById('name_field').addEventListener('keyup', function (event) {
@@ -213,24 +217,7 @@ function submit_form() {
     document.getElementById('footer').style.display = "none";
 }
 
-function modal_btn(){
+function modal_btn() {
     location.reload();
 }
 
-
-
-// document.getElementById('input_txt').addEventListener('keyup', function (event) {
-//     const text = event.target.value;
-//     const btnDelete = document.getElementById('btn-delete');
-//     if (text === 'delete') {
-//         btnDelete.removeAttribute('disabled');
-//     }
-//     else {
-//         btnDelete.setAttribute('disabled', true);
-//     }
-// });
-
-// document.getElementById('btn-delete').addEventListener('click', function () {
-//     const secretText = document.getElementById('secText');
-//     secretText.style.display = "none";
-// });
